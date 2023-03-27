@@ -10,16 +10,16 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 export const TestimonialCard = () => {
-  const [width, setWidth] = useState();
+  // const [width, setWidth] = useState();
 
-  useEffect(() => {
-    window.addEventListener("resize", () => {
-      setWidth(window.innerWidth);
-    });
-  }, [window.innerWidth, width]);
+  // useEffect(() => {
+  //   window.addEventListener("resize", () => {
+  //     setWidth(window.innerWidth);
+  //   });
+  // }, [window.innerWidth, width]);
 
   return (
-    <div className="pt-12 pb-24">
+    <div className="pt-12 pb-0 md:pb-10">
       <Swiper
         centeredSlides={false}
         grabCursor={true}
@@ -33,12 +33,23 @@ export const TestimonialCard = () => {
         }}
         modules={[Keyboard, Scrollbar, Navigation, Pagination, Autoplay]}
         className="mySwiper"
-        slidesPerView={width > 700 ? 2 : width > 1200 ? 2 : 1}
+        // slidesPerView={width > 700 ? 2 : width > 1200 ? 2 : 1}
+        slidesPerView={3}
         autoplay={{
           delay: 3000,
           disableOnInteraction: true,
         }}
         breakpoints={{
+          0: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+          },
+
+          500: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+          },
+
           769: {
             slidesPerView: 3,
             slidesPerGroup: 3,
@@ -50,13 +61,13 @@ export const TestimonialCard = () => {
           return (
             <SwiperSlide key={data.id}>
               <div
-                className="shadow-sm rounded-2xl text-sm bg-white flex flex-col items-start justify-center pl-5 pr-5"
+                className="shadow-lg rounded-2xl text-sm bg-white flex flex-col items-start justify-center pl-5 pr-5"
                 key={data.id}
               >
                 <p className="text-body pt-6 pb-3 text-sm font-medium">
                   {data.info}
                 </p>
-                <div className="flex items-center justify-center gap-2 pb-3">
+                <div className="flex items-center justify-center gap-3 md:gap-2 pb-3">
                   <img
                     src={data.imgSrc}
                     alt={data.name}

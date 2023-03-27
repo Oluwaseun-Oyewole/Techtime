@@ -48,3 +48,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #004db3 !important;
+}
+
+.mySwiper {
+  height: 380px;
+
+  /* margin-top: ; */
+}
+
+@media screen and (min-width: 1024px) {
+  .mySwiper {
+    height: 380px;
+  }
+}

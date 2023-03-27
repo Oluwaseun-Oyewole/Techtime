@@ -37,7 +37,7 @@ export const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!message) setError("Please fill the form to subscribe");
+    if (!message) setError("Please fill in the form to subscribe");
     else {
       setMessage("");
       setSuccess("You have subscribed to our newsletter");
