@@ -59,12 +59,16 @@ code {
 
 .mySwiper {
   height: 380px;
+}
 
-  /* margin-top: ; */
+@media screen and (min-width: 500px) {
+  .mySwiper {
+    height: 410px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .mySwiper {
-    height: 380px;
+    height: 450px;
   }
 }

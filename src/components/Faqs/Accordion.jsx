@@ -50,7 +50,7 @@ export const Accordion = ({ data }) => {
                   )}
                 </Wrap>
 
-                <div className="font-semibold transition-all ease-in-out duration-300 ">
+                <div className="font-semibold transition-all ease-in-out duration-300">
                   {clicked === index ? (
                     <AccordionDescription>
                       {item?.description}

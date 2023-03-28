@@ -19,7 +19,7 @@ export const TestimonialCard = () => {
   // }, [window.innerWidth, width]);
 
   return (
-    <div className="pt-12 pb-0 md:pb-10">
+    <div className="pt-12 pb-10 md:pb-10">
       <Swiper
         centeredSlides={false}
         grabCursor={true}
