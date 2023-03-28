@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { Button, Container } from "..";
-import { Link as LinkS, animateScroll as scroll } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Navigationlinks } from "../../utils/data";
 

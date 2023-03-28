@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Keyboard, Scrollbar, Navigation, Pagination, Autoplay } from "swiper";
 import { testimonialdata } from "../../utils/data";
@@ -19,7 +19,7 @@ export const TestimonialCard = () => {
   // }, [window.innerWidth, width]);
 
   return (
-    <div className="pt-12 pb-10 md:pb-10">
+    <div className="pt-12 pb-4 md:pb-10">
       <Swiper
         centeredSlides={false}
         grabCursor={true}

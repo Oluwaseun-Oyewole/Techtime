@@ -1,8 +1,6 @@
 import React from "react";
 import { servicesdata } from "../../utils/data";
 import styled from "styled-components";
-import tw from "twin.macro";
-import { AbsoluteImages } from "..";
 
 const CardContainer = styled.div`
   display: grid;

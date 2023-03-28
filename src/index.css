@@ -72,3 +72,9 @@ code {
     height: 450px;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .mySwiper {
+    height: 350px;
+  }
+}

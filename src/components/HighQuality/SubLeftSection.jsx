@@ -76,7 +76,7 @@ export const ButtonGroup = () => {
       <ButtonGroup1>
         {buttonsGroup1?.map((item, index) => (
           <Flex key={index}>
-            <img src={item.imgSrc} />
+            <img src={item.imgSrc} alt={item.title} />
             <Text>{item.title}</Text>
           </Flex>
         ))}
@@ -85,7 +85,7 @@ export const ButtonGroup = () => {
       <ButtonGroup2>
         {buttonsGroup2?.map((item, index) => (
           <Flex key={index}>
-            <img src={item.imgSrc} />
+            <img src={item.imgSrc} alt={item.title} />
             <Text>{item.title}</Text>
           </Flex>
         ))}

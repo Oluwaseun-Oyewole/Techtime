@@ -40,15 +40,6 @@ const HeroImage = styled.div`
   }
 `;
 
-const ImagContainer = styled.img`
-  width: 50%;
-  width: 700px;
-
-  @media screen and (max-width: 960px) {
-    ${tw`w-full`}
-  }
-`;
-
 export const Hero = () => {
   return (
     <HeroBakcground>
