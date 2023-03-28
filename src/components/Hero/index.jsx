@@ -2,6 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { Container, Button, AbsoluteImages } from "..";
+// import { Logo } from "../img/Vector-2.png";
 
 const HeroBakcground = styled.div`
   background: #004db3;
@@ -45,15 +46,21 @@ export const Hero = () => {
     <HeroBakcground>
       <Container>
         <AbsoluteImages
-          src="/assets/img/vector-2.png"
+          src="/public/assets/img/Vector-2.png"
           alt="hero"
-          className="hidden lg:block absolute w-3 left-[80px] top-4"
+          className="lg:block hidden absolute w-3 left-[80px] top-4"
         />
 
-        <AbsoluteImages
+        {/* <AbsoluteImages
           src="/assets/img/vector-3.png"
           alt="hero"
-          className=" hidden lg:block absolute w-2 left-[580px] top-16"
+          className="lg:block hidden absolute w-2 left-[580px] top-16"
+        /> */}
+
+        <AbsoluteImages
+          src={require("../img/Vector-3.png")}
+          alt="hero"
+          className="lg:block hidden absolute w-2 left-[580px] top-24"
         />
 
         <FlexContainer>
@@ -118,24 +125,30 @@ export const Hero = () => {
               </div>
             )}
 
-            <div className="flex items-center justify-center lg:block w-[100%] lg:mt-3">
+            <div className="flex items-center justify-center lg:block w-[100%] lg:mt-0">
               <img
-                src={"/assets/img/Frame 101.png"}
+                src={require("../img/Vector-2.png")}
                 alt="hero"
-                className="w-[200px] md:w-[300px]"
+                className="hidden lg:block w-[20px] md:w-[16px] absolute -top-[160px] left-8"
               />
             </div>
 
-            <AbsoluteImages
+            {/* <AbsoluteImages
               src="/assets/img/vector-1.png"
               alt="hero"
-              className="hidden lg:block absolute lg:w-20 xl:w-28 right-0 -bottom-5 lg:-right-20 lg:-bottom-5 xl:bottom-3"
+              className="lg:block hidden absolute lg:w-20 xl:w-28 right-0 -bottom-5 lg:-right-20 lg:-bottom-5 xl:bottom-3"
+            /> */}
+
+            <AbsoluteImages
+              src={require("../img/Vector-1.png")}
+              alt="hero"
+              className="lg:block hidden absolute lg:w-20 xl:w-28 right-0 -bottom-5 lg:-right-20 lg:-bottom-5 xl:-bottom-3"
             />
 
             <AbsoluteImages
               src={"/assets/img/vectormobile.png"}
               alt="hero"
-              className=" lg:hidden w-14 md:w-20 absolute right-0 -bottom-10 md:right-28"
+              className="lg:hidden w-14 md:w-20 absolute right-0 -bottom-10 md:right-28"
             />
           </HeroContent>
 

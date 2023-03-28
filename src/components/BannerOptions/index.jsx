@@ -13,7 +13,7 @@ export const BannerSection = ({ imgUrl, classname }) => {
         <div className="md:pt-3 md:pb-3 flex items-center justify-center gap-5 md:gap-10 lg:gap-14">
           {imgUrl?.map((el, i) => (
             <div key={i}>
-              <img src={el} className={classname} />
+              <img src={el} className={classname} alt="banner" />
             </div>
           ))}
         </div>
